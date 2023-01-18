@@ -5,6 +5,7 @@
     align-items: flex-end;
     margin-top: 10px;
     font-size: 10px;
+    max-height: 300px;
 }
 
 .chartDay {
