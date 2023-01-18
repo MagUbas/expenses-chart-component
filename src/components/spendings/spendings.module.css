@@ -1,0 +1,52 @@
+.spendingsBody{
+    background-color: white;
+    width: 540px;
+    min-height: 510px;
+    height: fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+}
+.spendingsBodyText{
+    color: hsl(25, 47%, 15%);
+    text-align: left;
+    justify-self: flex-start;
+    margin-left: 30px;
+    margin-bottom: auto;
+  
+   
+}
+
+.spendingsTotal {
+    display: grid; 
+    border-top:  1px hsl(27, 66%, 92%) solid;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 140px;
+
+  grid-template-areas: 
+    "text ."
+    "value interest"
+    "value interestText"; 
+    
+}
+
+.spendingsTotal p{
+    color:hsl(28, 10%, 53%);
+    margin:0;
+}
+.spendingsTotal h1,h3{
+    color:hsl(25, 47%, 15%);
+    margin:0;
+}
+
+.spendingsTotalText { grid-area: text; justify-self: start; }
+.spendingsTotalValue { grid-area: value; align-self: center; justify-self: start; }
+.spendingsTotalInterest { grid-area: interest; justify-self: end;}
+.spendingsTotalInterestText { grid-area: interestText;justify-self: end; }

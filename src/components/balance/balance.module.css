@@ -5,6 +5,7 @@
     height: 125px;
     margin: 0 auto;
     border-radius: 20px;
+    margin-bottom: 12px;
 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
