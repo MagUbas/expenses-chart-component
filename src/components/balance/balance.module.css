@@ -1,0 +1,50 @@
+.balanceBody{
+    background-color: hsl(10, 79%, 65%);
+    color:white;
+    width: 540px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      "text logo"
+      "value logo"; 
+    justify-content: space-between; 
+}
+
+.balanceBody p{
+    grid-area: text;
+    margin: 0;
+    justify-self: start; 
+  align-self: end; 
+}
+.balanceBody h2, .balanceBody p{
+    margin: 0px;
+    justify-self: start; 
+    margin-left: 35px;
+
+}
+.balanceBody h2{
+    grid-area: value;
+  align-self: start; 
+}
+.balanceBody p{
+    grid-area: text;
+  align-self: end; 
+  padding-bottom: 10px;
+}
+
+
+.balanceLogo{
+    background-image:url("logo.svg") ;
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 48px;
+    margin-right: 37px;
+    grid-area: logo;
+    justify-self: end; 
+  align-self: center; 
+}
